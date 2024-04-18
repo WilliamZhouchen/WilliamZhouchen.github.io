@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rosé - Home</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> <!-- Custom font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
 
 <style>
     body {
-        background-color: #fdf7f7; /* Soft pink background */
-        font-family: 'Montserrat', sans-serif; /* Custom font */
+        background-color: #fdf7f7;
+        font-family: 'Montserrat', sans-serif;
     }
 
     header {
-        background-color: #f9cccc; /* Light pink header */
+        background-color: #f9cccc; 
         padding: 20px;
         text-align: center;
     }
     nav {
-        background-color: #f6a4a4; /* Light pink navigation */
+        background-color: #f6a4a4; 
         color: white;
         text-align: center;
         padding: 10px;
@@ -27,16 +27,16 @@
         color: white;
         text-decoration: none;
         margin: 0 10px;
-        transition: color 0.3s; /* Adding transition for smooth color change */
+        transition: color 0.3s; 
     }
     nav a:hover {
-        color: #ff7f7f; /* Darker pink on hover */
+        color: #ff7f7f;
     }
     main {
         padding: 20px;
     }
     footer {
-        background-color: #f9cccc; /* Light pink footer */
+        background-color: #f9cccc; 
         padding: 10px;
         text-align: center;
     }
@@ -48,7 +48,7 @@
         height: 400px;
         max-width: 100%;
         position: relative;
-        overflow: hidden; /* Hide overflow to prevent content spill */
+        overflow: hidden; 
     }
 
     .slide {
@@ -57,7 +57,7 @@
         height: 400px;
         width: 100%;
         overflow: hidden;
-        transition: opacity 0.5s ease; /* Smooth transition effect with 0.5s duration */
+        transition: opacity 0.5s ease; 
     }
 
     .slide img {
@@ -72,27 +72,27 @@
 <h1>Welcome to the Official Rosé Website</h1>
 </header>
 <nav>
-  <a href="new.html">About Rosé</a>
-  <a href="awards_achivments.html">Awards and Achievements</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="about_us.html">About Us</a>
+  <a href="new.html">Om Rosé</a>
+  <a href="awards_achivments.html">Utmerkelser & prestasjoner</a>
+  <a href="gallery.html">Galleri</a>
+  <a href="about_us.html">Om Oss</a>
 </nav>
 <main>
 <section id="about">
-<h2>About Rosé</h2>
-<p>Rosé is a talented singer and member of the K-pop group BLACKPINK. She has garnered numerous awards and accolades for her exceptional vocal abilities and stage presence.</p>
+<h2>Litt om Rosé</h2>
+<p>Rosé er en talentfull sanger og medlem av K-pop gruppen BLACKPINK. Hun har fått mange priser og utmerkelser for sine vokalferdigheter og scenetilstedeværelse.</p>
 </section>
 <section id="awards">
-<h2>Awards and Achievements</h2>
+<h2>Utmerkelser og prestasjoner</h2>
 <ul>
-<li>Melon Music Award - Best Female Artist</li>
-<li>Golden Disc Award - Song of the Year</li>
-<li>Mnet Asian Music Award - Best Dance Performance </li>
-<li>Instagram Korea - Most Loved Account</li>
+<li>Melon Music Award - Beste Kvinnelige Artist</li>
+<li>Golden Disc Award - Årets Sang</li>
+<li>Mnet Asian Music Award - Beste Danseoptreden </li>
+<li>Instagram Korea - Mest Elsket Konto</li>
 </ul>
 </section>
 <section id="gallery">
-  <h2>Gallery</h2>
+  <h2>Lysbilder</h2>
   <div class="slideshow">
     <div class="slide">
       <img src="Rose.jpeg" alt="Rosé">
@@ -113,7 +113,7 @@
 </section>
 </main>
 <footer>
-<p>Contact Us: info@roséwebsite.com</p>
+<p>Kontakt Meg: info@hoyre.no</p>
 </footer>
 
 <script>
@@ -131,17 +131,16 @@
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
 
-    // Add 'show' class to the current slide for fade-in effect
+    
     slides[slideIndex-1].classList.add('show');
 
     setTimeout(function() {
-        // Remove 'show' class from all slides after the animation duration
         for (i = 0; i < slides.length; i++) {
             slides[i].classList.remove('show');
         }
-    }, 500); // Animation duration of 0.5s (500ms)
+    }, 500);
 
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); 
 }
 </script>
 
